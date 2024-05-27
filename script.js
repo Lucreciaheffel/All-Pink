@@ -1,4 +1,4 @@
-/*let color = prompt("Ingresa tu color favorito en minusculas");
+let color = prompt("Ingresa tu color favorito");
 
 if (color.toLowerCase() === "rosa") {
   alert("Wow! Vas a disfrutar mucho de esta pagina! Bienvenida/o");
@@ -19,4 +19,4 @@ function saludo() {
 saludo();
 
 alert("SE FELIZ EN UN MUNDO ROSA!");
-*/
+
