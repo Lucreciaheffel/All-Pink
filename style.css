@@ -15,7 +15,7 @@
         flex-direction: column;
     }
     .cuerpo{
-        background-image: url(IMAGENES/habitacion.jpg);
+        background-image: url(IMAGENES/logo.jpg);
     }
     header {
         background-color: hotpink;
@@ -41,8 +41,6 @@
         transition: all 0.3s;
     }
     .imgLogo:hover {
-        /* transform: translateY(-4px); */
-        /* transform: rotate(90deg); */
         transform: scale(1.1);
         border-radius: 10px;
         box-shadow: 0 0 4px #fff;
@@ -50,6 +48,7 @@
         transition: all 0.3s;
     }
     nav {
+        width: 90%;
         margin-top: 2rem;
         padding: 10px;
         background-color: rgb(25, 20, 20);
@@ -190,6 +189,11 @@
     .ancho{
         width: 50%;
     }
+    .fondocar{
+        background-color: #5dbee8;
+        width: 700px;
+        padding-left: 25%;
+    }
     .descarga{
         background-color: #0e0e0e;
         font-size: large;
@@ -197,10 +201,29 @@
     }
     footer {
         margin-top: auto;
-        background-color: #711360;
-        padding: 16px;
+        background-color: black;
+        padding: 5px;
+        border: 2px solid rgb(219, 103, 219);
         border-radius: 16px;
         display: grid;
         place-items: center;
     }
-     
+    @media only screen and (min-width: 321px) and (max-width: 768px){
+        .contenedor{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }  
+        .cuerpo{
+            background-image: url(./IMAGENES/labios\ 1.jpg);
+        }
+        }
+        @media only screen and (min-width: 769px) {
+            .contenedor{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }  
+            .cuerpo{
+                background-image: url(./IMAGENES/fondo.jpg);
+            }
+            }
+        
