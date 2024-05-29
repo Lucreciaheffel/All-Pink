@@ -1,4 +1,4 @@
-   * {
+   *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -8,14 +8,10 @@
     body {
         font-family: system-ui, sans-serif;
         color: #e097cf;
-        background-image:
-            linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url("./IMAGENES/logo.jpg");
+        background-image: url("./IMAGENES/fondomobile.jpg");
         height: 100vh;
         display: flex;
         flex-direction: column;
-    }
-    .cuerpo{
-        background-image: url(IMAGENES/logo.jpg);
     }
     header {
         background-color: hotpink;
@@ -34,8 +30,11 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: #0e0e0e;
     }
+    h3{
+        color: #333;
+    }
     .imgLogo {
-        width: 80px;
+        width: 40px;
         opacity: 0.8;
         border-radius: 50%;
         transition: all 0.3s;
@@ -52,6 +51,7 @@
         margin-top: 2rem;
         padding: 10px;
         background-color: rgb(25, 20, 20);
+        flex-direction: row;
     }
     ul {
         display: flex;
@@ -78,11 +78,9 @@
         gap: 16px;
         transition: all 0.3s;
     }
-    
-    
     a {
-        color: #e45757;
-        font-weight: 600;
+        color: violet;
+        font-weight: 500;
         transition: all 0.3s;
     }
     li:hover {
@@ -108,17 +106,19 @@
         align-items: center;
         gap: 8px;
     }
+    .formulario{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    }
     .cursiva {
         font-style: italic;
     }
     .parrafoConEstilosDiferentes {
-        color: violet;
-        background-color: aqua;
+        color: pink;
+        background-color: violet;
         font-size: 1.5rem;
-        font-weight: 900;
-        text-transform: lowercase;
+        font-weight: 500;
+        text-transform: capitalize;
     }
-   
     .cardsContainer {
         display: flex;
         justify-content: space-evenly;
@@ -145,7 +145,7 @@
     .cardBody img {
         width: 100%;
         border-radius: 6px;
-        box-shadow: 0 2px 4px #333;
+        box-shadow: 0 2px 4px #6cd2fa;
     }
     .cardTitle {
         font-weight: bold;
@@ -168,26 +168,8 @@
         font-weight: bold;
         color: rgb(56, 215, 56);
     }
-    .cardBody button {
-        padding: 8px 16px;
-        width: 100%;
-        border: none;
-        border-radius: 8px;
-        background-color: #1b82f7;
-        color: #e0e0e0;
-        font-weight: bold;
-        letter-spacing: 1px;
-        cursor: pointer;
-        box-shadow: 0 0 2px #333;
-        transition: all 0.3s;
-    }
-    .cardBody button:hover {
-        background-color: #0c35f0;
-        box-shadow: inset 0 0 6px #fff;
-        transition: all 0.3s;
-    }
-    .ancho{
-        width: 50%;
+    .oscuro{
+        color: #333;
     }
     .fondocar{
         background-color: #5dbee8;
@@ -209,7 +191,7 @@
         place-items: center;
     }
     @media only screen and (min-width: 321px) and (max-width: 768px){
-        .contenedor{
+        .cardsContainer{
             display: grid;
             grid-template-columns: 1fr 1fr;
         }  
@@ -218,7 +200,18 @@
         }
         }
         @media only screen and (min-width: 769px) {
-            .contenedor{
+            footer {
+                margin-top: auto;
+                background-color: black;
+                padding: 5px;
+                border: 2px solid rgb(219, 103, 219);
+                border-radius: 16px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                place-items: center;
+            }
+            .cardsContainer{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
             }  
